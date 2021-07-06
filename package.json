@@ -1,0 +1,16 @@
+{
+  "name": "front-end-28bit-zodynas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eugenijus Komas",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
