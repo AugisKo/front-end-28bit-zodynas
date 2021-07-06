@@ -1,28 +1,58 @@
 body {
-    background-color: #f9f9f9;
+    background-color: #f9d4af;
+    align-content: center;
 }
 
-.zodynas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 20px;
+.ivestis {
+    background-color: #be6b2a;
+    width: 898px;
 }
 
-/*
-form {
+.titulinis {
+    font-size: 28px;
+}
+
+.formos {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 5px;
-    padding: 30px 40px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    width: 400px;
     max-width: 90%;
 }
 
+.formos > .antraste {
+    display:flex;
+    width: 70%;
+    margin-left: 15%;
+}
+.antraste>.text {
+    color: white;
+    font-size: 26px;
+    width: 65%;
+}
+
+.btn {
+ 
+}
+
+.btn > .save {
+    background-color: #008000;
+     width: 136px;
+     height: 44px;
+     font-size: 18px;
+     color: white;
+     border-color: black;
+     border: 0px 2px 2px 0;
+
+}
+
+.btn > .reset {
+    background-color: #ff6a00;
+     width: 136px;
+     height: 44px;
+      font-size: 18px;
+      color: white;
+      border: 0px;
+}
+
+/*
 form.hide {
     display: none;
 }
