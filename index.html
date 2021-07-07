@@ -13,34 +13,20 @@
 
 <body>
     <div id="zodynas">
-        <h1 class="titulinis">Tipo - žodynas </h1>
+        <h1>Tipo - Žodynas</h1>
         <div class="ivestis">
-            <div class="formos">
-                <div class="antraste">
-                    <div class="text">Anglų</div>
-                    <div class="text">Lietuvių</div>
-                </div>
-                <div class="laukai">
-                    <form class="angl" type="text"></form>
-                    <form class="liet" type="text"></form>
-                </div>
-            </div>
-            <div class="btn">
-                <button class="save">Save</button>
-                <button class="reset">Reset</button>
-            </div>
+            <form class="ivesties_forma">
+                <lable for="eng">Anglų</lable>
+                <lable class="liet" for="liet">Lietuvių</lable><br>
+                <input type="text" id="eng" name="eng">
+                <input type="text" id="liet" name="liet">
+                <input type="submit" value="Save">
+                <input type="submit" value="Reset">
+            </form>
         </div>
-        <div class="isvestis">
-            <h1 class="titulinis">Išsaugoti Žodžiai</h1>
-            <div class="zodyno_turinys">
-                <div class="ang_txt">text</div>
-                <div class="ltu_txt">tekstas</div>
-            </div>
-            <div class="btn2">
-                <button class="fa fa-pen"></button>
-                <button class="fa fa-trash-alt"></button>
-            </div>
-        </div>
+
+
+
     </div>
     <script src="./js/main.js" type="module" defer></script>
 </body>
