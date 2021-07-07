@@ -1,5 +1,5 @@
 body {
-    background-color: #f9d4af;
+    display: flex;
     justify-content: center;
 }
 
@@ -7,15 +7,47 @@ h1 {
     font-size: 28px;
 }
 
-.ivestis_forma {
+.ivesties_forma {
+    display: flex;
     width: 898px;
-    height: 130px;
-    background-color: #be6b2a;
+    background-color: #aaccf3;
 }
+
+.ang {
+    justify-content: space-between;
+    width: 240px;
+    height: 25px;
+    margin: 20px 0 20px 20px ;
+}
+
+.liet {
+    justify-content: space-between;
+    width: 240px;
+    height: 25px;
+    margin: 20px 0 20px 20px;
+
+   
+}
+
+input {
+    width: 150px;
+    height: 25px;
+}
+
+.btn > [name="save"] {
+    margin: 20px;
+    background-color:  green;
+}
+
+.btn > [name="reset"] {
+    margin-top: 20px;
+    background-color:  red;
+}
+
 lable {
     font-size: 24px;
-    color: white;
 }
+
 
 
 

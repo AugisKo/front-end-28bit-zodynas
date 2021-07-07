@@ -12,22 +12,32 @@
 </head>
 
 <body>
-    <div id="zodynas">
-        <h1>Tipo - Žodynas</h1>
-        <form class="ivesties_forma">
-            <div>
-                <lable for="eng">Anglų</lable>
-                <input type="text" id="eng" name="eng">
-            </div>
-            <div>
-                <lable class="liet" for="liet">Lietuvių</lable><br>
-                <input type="text" id="liet" name="liet">
-            </div>
-            <div>
-                <input type="submit" value="Save">
-                <input type="submit" value="Reset">
-            </div>
-        </form>
+    <h1>Tipo - Žodynas</h1>
+    <form class="ivesties_forma">
+        <div class="ang">
+            <lable for="eng">Anglų</lable>
+            <input type="text" id="eng" name="text">
+        </div>
+        <div class="liet">
+            <lable for="liet">Lietuvių</lable>
+            <input type="text" id="liet" name="text">
+        </div>
+        <div class="btn">
+            <input name="save" type="submit" value="Save">
+            <input name="reset" type="submit" value="Reset">
+        </div>
+    </form>
+    <div class="isvestis">
+        <table>
+            <tr>
+                <td>Angliskas zodis</td>
+                <td>Lietuviskas zodis</td>
+                <td>
+                    <button type="fa fa-pencil"></button>
+                    <button type="fa fa-trash"></button>
+                </td>
+            </tr>
+        </table>
     </div>
     <script src="./js/main.js" type="module" defer></script>
 </body>
