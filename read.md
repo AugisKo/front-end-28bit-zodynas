@@ -1,4 +1,3 @@
- <!---
     <form class="ivesties_forma">
         <div class="ang">
             <lable for="eng">Anglų</lable>
@@ -65,4 +64,3 @@
             </tr>
         </table>
     </div>
-    --->
