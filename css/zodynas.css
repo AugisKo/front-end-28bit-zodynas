@@ -3,17 +3,16 @@ body {
     align-items: center;
     flex-direction: column;
     background-image: url(/img/open-book.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     margin: 2% 0 20px 0;
     font-size: 28px;
     color: rgb(148, 87, 87);
-    
 }
 
 .ivesties_forma {
@@ -23,14 +22,14 @@ h1 {
     border-width: 2px;
     border-color: rgb(148, 87, 87);
     color: rgb(148, 87, 87);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ang {
     display: flex;
     width: 240px;
     height: 25px;
-    margin: 20px 0 20px 20px ;
+    margin: 20px 0 20px 20px;
 }
 
 .liet {
@@ -38,12 +37,9 @@ h1 {
     width: 240px;
     height: 25px;
     margin: 20px 0 20px 20px;
-
-   
 }
 
 input {
-    
     height: 25px;
     border-radius: 10px;
     border-width: 2px;
@@ -58,76 +54,81 @@ button {
     border: 2px;
 }
 
-.btn > [name="save"] {
-    background-color:  darkgrey;
+.btn>[name='save'] {
+    background-color: darkgrey;
     color: lightgrey;
     margin-top: 15px;
 }
-.btn>[name="save"]:hover {
 
+.btn>[name='save']:hover {
     background-color: rgb(3, 2, 2);
 }
 
-.btn>[name="reset"] {
+.btn>[name='reset'] {
     background-color: rgb(247, 155, 155);
     color: rgb(248, 76, 76);
     margin-top: 15px;
 }
 
-.btn>[name="reset"]:hover {
-background-color: rgb(248, 31, 31);
-      color:white;
+.btn>[name='reset']:hover {
+    background-color: rgb(248, 31, 31);
+    color: white;
 }
 
-
-button > [name="edit"], button>[name="delete"] {
+button>[name='edit'],
+button>[name='delete'] {
     margin-top: 0;
 }
 
-button>[name="delete"]:hover {
-   color: white;
+button>[name='delete']:hover {
+    color: white;
 }
 
 lable {
     font-size: 22px;
     margin-right: 10px;
-
 }
+
 .isvestis {
-    display: flex;
-    justify-content: center;
-    overflow-y:auto;
+    /* display: flex;
+    justify-content: center;*/
+    overflow-y: auto;
     width: 50%;
-    height: 190px;
-    border: 2px solid rgb(148, 87, 87);
+    height: 200px;
+    border: 0px solid rgb(148, 87, 87);
     border-radius: 10px;
-    background: rgb(150, 106, 106, 0.1);
-    padding-top: 10px;
-
+    /*background: rgb(150, 106, 106, 0.1);*/
+    padding-bottom: 5px;
 }
+
 table {
-   width: 98%;
-  
+    width: 98%;
+    border-spacing: 12px;
+    border-collapse: separate;
+    table-layout: fixed;
+    margin-bottom: 5px;
 }
 
 td {
     vertical-align: middle;
-    height: 25px;
-    width: 25px;
-    margin-left: 10px; 
-    background:white;
+    margin-left: 10px;
+    background: white;
     border-radius: 5px;
     padding-left: 10px;
 }
 
-td > .btn {
+td:nth-child(3) {
+    width: 100px;
+    background: transparent;
+}
+
+td>.btn {
     display: flex;
     float: right;
     width: 15px;
     align-items: right;
     vertical-align: middle;
 }
-
 
 
 
