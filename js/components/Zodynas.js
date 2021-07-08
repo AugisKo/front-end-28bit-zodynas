@@ -1,13 +1,14 @@
 class Zodynas {
-  constructor() {
+  constructor(IDselector) {
+    this.IDselector = IDselector;
     this.DOM = null;
 
     this.addFormDOM = null;
-
     this.init();
   }
 
   init() {
+    his.DOM = document.getElementById(this.IDselector);
     this.render();
   }
 
@@ -20,7 +21,8 @@ class Zodynas {
   }
 
   generateAddForm() {
-    return `<form id="add_zodis" class="ivesties_forma">
+    return `<h1 id="zodynas">Tipo - Žodynas</h1>
+    <form id="add_zodis" class="ivesties_forma">
         <div class="ang">
             <lable for="eng">Anglų</lable>
             <input type="text" id="eng" name="text">
@@ -34,6 +36,15 @@ class Zodynas {
             <button class="fa fa-eraser" name="reset" type="submit" value="Reset"></button>
         </div>
     </form>`;
+  }
+
+  generateTable() {
+    return `<div class="isvestis">
+        <table>
+            <tbody id="zodyno_body">
+            </tbody>
+        </table>
+    </div>`;
   }
 
   tableRow() {
@@ -50,7 +61,6 @@ class Zodynas {
   render() {
     let HTML = '';
     HTML += this.generateAddForm();
-
     this.DOM.insertAdjacentHTML('afterend', HTML);
     this.addFormDOM = document.getElementById('add_zodis');
     var newRow = document.getElementById('zodyno_body').insertRow();
