@@ -115,6 +115,9 @@ td {
     height: 25px;
     width: 25px;
     margin-left: 10px; 
+    background:white;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 td > .btn {
