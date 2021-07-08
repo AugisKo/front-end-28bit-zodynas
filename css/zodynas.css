@@ -1,20 +1,33 @@
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/img/open-book.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 2% 0 20px 0;
     font-size: 28px;
+    color: rgb(148, 87, 87);
+    
 }
 
 .ivesties_forma {
     display: flex;
-    width: 898px;
-    background-color: #aaccf3;
+    background-color: none;
+    border-radius: 25%;
+    border-width: 2px;
+    border-color: rgb(148, 87, 87);
+    color: rgb(148, 87, 87);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ang {
-    justify-content: space-between;
+    display: flex;
     width: 240px;
     height: 25px;
     margin: 20px 0 20px 20px ;
@@ -30,22 +43,86 @@ h1 {
 }
 
 input {
-    width: 150px;
+    
     height: 25px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgb(150, 106, 106);
+}
+
+button {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px;
 }
 
 .btn > [name="save"] {
-    margin: 20px;
-    background-color:  green;
+    background-color:  darkgrey;
+    color: lightgrey;
+    margin-top: 15px;
+}
+.btn>[name="save"]:hover {
+
+    background-color: rgb(3, 2, 2);
 }
 
-.btn > [name="reset"] {
-    margin-top: 20px;
-    background-color:  red;
+.btn>[name="reset"] {
+    background-color: rgb(247, 155, 155);
+    color: rgb(248, 76, 76);
+    margin-top: 15px;
+}
+
+.btn>[name="reset"]:hover {
+background-color: rgb(248, 31, 31);
+      color:white;
+}
+
+
+button > [name="edit"], button>[name="delete"] {
+    margin-top: 0;
+}
+
+button>[name="delete"]:hover {
+   color: white;
 }
 
 lable {
-    font-size: 24px;
+    font-size: 22px;
+    margin-right: 10px;
+
+}
+.isvestis {
+    display: flex;
+    justify-content: center;
+    overflow-y:auto;
+    width: 50%;
+    height: 190px;
+    border: 2px solid rgb(148, 87, 87);
+    border-radius: 10px;
+    background: rgb(150, 106, 106, 0.1);
+    padding-top: 10px;
+
+}
+table {
+   width: 98%;
+  
+}
+
+td {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    margin-left: 10px; 
+}
+
+td > .btn {
+    display: flex;
+    float: right;
+    width: 15px;
+    align-items: right;
+    vertical-align: middle;
 }
 
 
