@@ -2,13 +2,22 @@ class Zodynas {
   constructor(IDselector) {
     this.IDselector = IDselector;
     this.DOM = null;
-
     this.addFormDOM = null;
+
     this.init();
   }
 
   init() {
-    his.DOM = document.getElementById(this.IDselector);
+    if (!this.isValidSelector()) {
+      return false;
+    }
+
+    this.DOM = document.getElementById(this.IDselector);
+    if (!this.DOM) {
+      console.error('ERROR: nerasta vieta, pagal duota selector');
+      return false;
+    }
+
     this.render();
   }
 
@@ -20,9 +29,10 @@ class Zodynas {
     return true;
   }
 
+  
+
   generateAddForm() {
-    return `<h1 id="zodynas">Tipo - Žodynas</h1>
-    <form id="add_zodis" class="ivesties_forma">
+    return `<form id="add_zodis" class="ivesties_forma">
         <div class="ang">
             <lable for="eng">Anglų</lable>
             <input type="text" id="eng" name="text">
@@ -38,7 +48,24 @@ class Zodynas {
     </form>`;
   }
 
-  generateTable() {
+  generateUpdateForm() {
+    return `<form id="update_zodis" class="hide" >
+        <div class="ang">
+            <lable for="eng">Anglų</lable>
+            <input type="text" id="eng" name="text">
+        </div>
+        <div class="liet">
+            <lable for="liet">Lietuvių</lable>
+            <input type="text" id="liet" name="text">
+        </div>
+        <div class="btn">
+            <button class="fa fa-pencil-square-o" name="save" type="submit" value="Update"></button>
+            <button class="fa fa-eraser" name="reset" type="submit" value="Reset"></button>
+        </div>
+    </form>`;
+  }
+
+  generateAddTable() {
     return `<div class="isvestis">
         <table>
             <tbody id="zodyno_body">
@@ -47,7 +74,7 @@ class Zodynas {
     </div>`;
   }
 
-  tableRow() {
+  generateAddTableRow() {
     return ` <tr>
                 <td>${angliskasZodis}</td>
                 <td>${LietuviskasZodis}</td>
@@ -59,13 +86,17 @@ class Zodynas {
   }
 
   render() {
-    let HTML = '';
+    let HTML = `<h1 id="zodynas">Tipo - Žodynas</h1>`;
+    this.DOM.insertAdjacentHTML('afterbegin', HTML);
     HTML += this.generateAddForm();
-    this.DOM.insertAdjacentHTML('afterend', HTML);
+    HTML += this.generateAddTable();
+    this.DOM.innerHTML = HTML;
+
+  /*  this.DOM.insertAdjacentHTML('afterend', HTML);
     this.addFormDOM = document.getElementById('add_zodis');
     var newRow = document.getElementById('zodyno_body').insertRow();
     newRow.innerHTML = this.tableRow;
-    HTML += this.newRow;
+    HTML += this.newRow;*/
   }
 }
 
