@@ -3,7 +3,8 @@ class Zodynas {
     this.IDselector = IDselector;
     this.DOM = null;
     this.addFormDOM = null;
-
+    this.submitButtonDOM = null;
+    
     this.init();
   }
 
@@ -29,7 +30,17 @@ class Zodynas {
     return true;
   }
 
-  
+ addEvents() {
+   this.submitButtonDOM = document.
+    this.submitButtonDOM.addEventListener('click', (event) => {
+      event.preventDefault();
+      let allGood = true;
+
+      for (let element of this.allInputsDOM) {
+        const validationRule = element.dataset.validation;
+      }
+    }
+  }
 
   generateAddForm() {
     return `<form id="add_zodis" class="ivesties_forma">
@@ -92,12 +103,18 @@ class Zodynas {
     HTML += this.generateAddTable();
     this.DOM.innerHTML = HTML;
 
-  /*  this.DOM.insertAdjacentHTML('afterend', HTML);
+    /*  this.DOM.insertAdjacentHTML('afterend', HTML);
     this.addFormDOM = document.getElementById('add_zodis');
     var newRow = document.getElementById('zodyno_body').insertRow();
     newRow.innerHTML = this.tableRow;
     HTML += this.newRow;*/
   }
+
+  render_Row() {
+
+
+  }
+
 }
 
 export { Zodynas };
